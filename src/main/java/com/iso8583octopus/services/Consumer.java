@@ -14,9 +14,9 @@ public class Consumer {
 	private final Logger logger = LoggerFactory.getLogger(Consumer.class);
 	private static final String TOPIC = "67";
 
-    @KafkaListener(topics = TOPIC, groupId = "67")
-    public void consume(String message) throws IOException {
-        logger.info(String.format("Consumed message : %s", message));
-    }
+	@KafkaListener(topics = TOPIC, groupId = "67")
+	public void consume(String message) throws IOException {
+		logger.info(String.format("Consumed message : %s", message));
+	}
 
 }
